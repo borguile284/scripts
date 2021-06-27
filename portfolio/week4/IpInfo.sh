@@ -19,5 +19,5 @@ p
 }') 
       
 #format output 
-      
+   
 echo -e "IP addresses on this computer are:\n$addresses" 
