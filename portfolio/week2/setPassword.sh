@@ -9,8 +9,8 @@ read -sp "create password:" Pass
 #set working directory dictated by user
 cd ~/scripts/portfolio/$folderName
 
-echo $Pass | sha256sum hashedPass 
+#hash the user created password using sha256 encryption
+echo $Pass | sha256sum hashedPass
 
-echo $hashedPass
-#append password to secret.txt file
+#append the hashed password to secret.txt file
 echo $hashedPass >> secret.txt
